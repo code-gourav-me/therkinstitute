@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FEE STRUCTURE</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fddd97;
+}
+
+.name3{
+  color: #fff;
+  align-self: center;
+}
+
+.logo1{
+  background-color: transparent;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8162bb;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  margin: 0px;
+  z-index: 1000;
+  height: 80px;
+}
+
+
+
+ nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #58a6ff;
+}
+ 
+/* Responsive menu for mobile */
+ @media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background-color: #0d1117;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 200px;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+
+  }
+} 
+
+
+
+.menu-toggle {
+  display: none;
+}
+
+.rk{
+    color: red;
+}
+
+/* Full height layout to keep footer at bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #fff9c2;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #8162bb;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container > div {
+  flex: 1 1 220px;
+}
+
+.footer-container h3,
+.footer-container h4 {
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-newsletter input {
+  padding: 8px;
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+.footer-newsletter button {
+  padding: 8px 16px;
+  background-color: #f1c40f;
+  color: #222;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.footer-newsletter button:hover {
+  background-color: #d4ac0d;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+thead {
+    background-color: #3498db;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.features {
+    list-style: none;
+    padding-left: 0;
+    columns: 2;
+    margin-top: 1rem;
+}
+
+.features li {
+    padding: 6px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.features li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.features .optional::before {
+    content: "➕";
+    color: #f39c12;
+}
+
+.features .exclusive::before {
+    content: "⭐";
+    color: #8e44ad;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: #999;
+    font-size: 14px;
+}
+  </style>
+</head>
+
+<body class="bg3">
+  <div>
+    <div>
+      <header>
+        <img src="photos/logo.png" alt="" class="logo1" width="70px" height="60px">
+        <center>
+          <h1 class="name3">THE R.K. INSTITUTE</h1>
+        </center>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav>
+          <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="admition.html">Admission</a></li>
+            <li><a href="institute.html">Fee structure</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="wrapper">
+      <main class="main-content">
+        <section class="container">
+          <h1>R.K. Institute - Fee Structure (Session: 2025-26)</h1>
+          <div class="section">
+            <h2>Nursery to Class XII</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>School Guidance<br></th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> (Nursery)</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td> (K.G.I)</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td> (K.G.II)</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td> (Class I)</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td> (Class II)</td>
+                  <td>600</td>
+                 
+                </tr>
+                <tr>
+                  <td>(Class III)</td>
+                  <td>650</td>
+                 
+                </tr>
+                <tr>
+                  <td> (Class IV)</td>
+                  <td>700</td>
+                  
+                </tr>
+                <tr>
+                  <td> (Class V)</td>
+                  <td>750</td>
+                  
+                </tr>
+                <tr>
+                  <td> (Class VI )</td>
+                  <td>800</td>
+                  
+                </tr>
+                <tr>
+                  <td> (Class VII)</td>
+                  <td>850</td>
+                  
+                </tr>
+                <tr>
+                  <td>  (Class VIII)</td>
+                  <td>900</td>
+                  
+                </tr>
+                <tr>
+                  <td> (Class IX) </td>
+                  <td>1200</td>
+                 
+                </tr>
+                
+                <tr>
+                  <td> (Class X) </td>
+                  <td>1300</td>
+                  
+                </tr>
+                <tr>
+                  <td>(Class XI) </td>
+                  <td>1500</td>
+                  
+                </tr>
+                 <tr>
+                  <td> (Class XII) </td>
+                  <td>1600</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Key Features</h3>
+            <ul class="features">
+              <li>Timely Syllabus Completion</li>
+              <li>Worksheets</li>
+              <li>Notes & Study Materials</li>
+              <li>Doubt Clearing Sessions</li>
+              <li>Chapter Wise Revision</li>
+              <li>Parents Teachers Meet</li>
+              <li>Motivational Session</li>
+              <li>Weekly Test Series</li>
+              <li class="optional">Term Exams & Mock Papers (Edge & Edge+)</li>
+              <li class="optional">Olympiad Prep (Edge & Edge+)</li>
+              <li class="optional">Personality Development (Edge & Edge+)</li>
+              <li class="exclusive">Reading & Writing, Olympiads, Spoken English (Edge+)</li>
+            </ul>
+          </div>
+
+          <!-- Repeat similar structure for Classes V-VIII, IX-X, XI, XII -->
+
+          <footer>
+            <p>© 2021-22 The R.K. Institute | All Rights Reserved</p>
+          </footer>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>THE R.K. INSTITUTE</h3>
+            <p>Empowering students through quality education and personalized mentorship.</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="https://www.facebook.com/rakesh012345/">📘Facebook</a></li>
+              <li><a href="http://www.youtube.com/@ther.k.institute7325">📺YouTube</a></li>
+              <li><a href="https://www.instagram.com/therkinstitute/">📸Instagram</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>📍 1027 Dwarkapuri, 60 Feet Road, Indore (M.P.)</p>
+            <p>📞 +91 9522222024</p>
+            <p>✉️ gouravgandhwane@gmail.com</p>
+          </div>
+
+          
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 THE R.K. INSTITUTE. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>
+
+</div>
+</div>
+
+
+</body>
+
+</html>

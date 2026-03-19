@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABOUT US</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .bg3 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fddd97;
+    }
+
+    .name3 {
+      color: #fff;
+      align-self: center;
+    }
+
+    .logo1 {
+      background-color: transparent;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #8162bb;
+      padding: 15px 30px;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      margin: 0px;
+      z-index: 1000;
+      height: 80px;
+    }
+
+
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #58a6ff;
+    }
+
+    /* Responsive menu for mobile */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background-color: #0d1117;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        width: 200px;
+        display: none;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #fccb93;
+
+      }
+    }
+
+
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .rk {
+      color: red;
+    }
+
+    /* Full height layout to keep footer at bottom */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      background: #fff9c2;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #8162bb;
+      color: #fff;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-container>div {
+      flex: 1 1 220px;
+    }
+
+    .footer-container h3,
+    .footer-container h4 {
+      color: #f1c40f;
+      margin-bottom: 10px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-newsletter input {
+      padding: 8px;
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: none;
+    }
+
+    .footer-newsletter button {
+      padding: 8px 16px;
+      background-color: #f1c40f;
+      color: #222;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .footer-newsletter button:hover {
+      background-color: #d4ac0d;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      border-top: 1px solid #444;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .section {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 6px solid #d4ac0d;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.01);
+    }
+
+    .section h2 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.1em;
+      color: #003366;
+    }
+  </style>
+</head>
+
+<body class="bg3">
+  <div>
+    <div>
+      <header>
+        <img src="photos/logo.png" alt="" class="logo1" width="70px" height="60px">
+        <center>
+          <h1 class="name3">THE R.K. INSTITUTE</h1>
+        </center>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav>
+          <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="admition.html">Admission</a></li>
+            <li><a href="institute.html">Fee structure</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="wrapper">
+      <main class="main-content">
+        <div>
+
+
+          <section class="section">
+            <h2>Our Vision</h2>
+            <p>We focus on building a strong foundation of knowledge and concepts in students for their success and
+              provide an excellent platform for the preparation of competitive exams and board level education. The best
+              academic support and personal care we provide helps them meet their career goals and objectives.</p>
+          </section>
+
+          <section class="section">
+            <h2>Our Core Values</h2>
+            <p>Determination, Honesty, Authenticity, Integrity, Devotion, Humanism, Holistic Learning, Social Ethics,
+              and concern for society & environment are interwoven into our academic programs.</p>
+          </section>
+
+          <section class="section">
+            <h2>Our Faculty</h2>
+            <p>RK stands proud on a very strong pool of well-qualified, experienced, dedicated and hardworking
+              professionals who are passionate about teaching and committed to student success.</p>
+          </section>
+
+          <section class="section">
+            <h2>Our Orientation System</h2>
+            <p>Each student is considered a valuable asset. We develop analytical thinking, a positive attitude, and
+              goodness backed by academic excellence to prepare them for life.</p>
+          </section>
+
+          <section class="section">
+            <h2>Courses to Meet Competition</h2>
+            <p>Our courses are comprehensive yet simple, designed to match students' potential. They continuously evolve
+              to keep up with the ever-changing patterns of competitive examinations.</p>
+          </section>
+
+          <section class="section">
+            <h2>Positive Learning Environment</h2>
+            <p>Learning is deeply influenced by the environment. We infuse our surroundings with positivity, helping
+              students embrace learning with optimism and purpose.</p>
+          </section>
+
+          <section class="section">
+            <h2>Message to Parents</h2>
+            <p>As a parent, you want the best for your child. We partner with you to nurture their talent and energy,
+              shaping them into capable and ethical leaders of tomorrow.</p>
+          </section>
+
+          <section class="section">
+            <h2>Our Responsibility</h2>
+            <p>We aim to support not only individual student success but also to positively impact society by
+              cultivating lifelong learners who lead with values and excellence.</p>
+          </section>
+
+          <footer>
+            <p>Best Regards,<br>THE R.K. INSTITUTE</p>
+          </footer>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>THE R.K. INSTITUTE</h3>
+            <p>Empowering students through quality education and personalized mentorship.</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="https://www.facebook.com/rakesh012345/">📘Facebook</a></li>
+              <li><a href="http://www.youtube.com/@ther.k.institute7325">📺YouTube</a></li>
+              <li><a href="https://www.instagram.com/therkinstitute/">📸Instagram</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>📍 1027 Dwarkapuri, 60 Feet Road, Indore (M.P.)</p>
+            <p>📞 +91 9522222024</p>
+            <p>✉️ gouravgandhwane@gmail.com</p>
+          </div>
+
+
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 THE R.K. INSTITUTE. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>
+
+</div>
+</div>
+</body>
+
+</html>
